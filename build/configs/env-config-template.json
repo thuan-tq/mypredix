@@ -1,0 +1,19 @@
+{
+  "uaa_id": "predix_client",
+  "uaa_secret": "IM_SO_SECRET",
+  "token": "",
+  "uaa_uri": "{vcapServices['predix-uaa'][0].credentials.uri}",
+  "uaa_instance_id": "{vcapServices['predix-uaa'][0].credentials.zone['http-header-value']}",
+  "timeseries_ingest_uri": "{vcapServices['predix-timeseries'][0].credentials.ingest.uri}",
+  "timeseries_query_uri": "{vcapServices['predix-timeseries'][0].credentials.query.uri}",
+  "timeseries_instance_id": "{vcapServices['predix-timeseries'][0].credentials.ingest['zone-http-header-value']}",
+  "execution_uri": "{vcapServices['predix-analytics-runtime'][0].credentials['execution_uri']}",
+  "config_uri": "{vcapServices['predix-analytics-runtime'][0].credentials['config_uri']}",
+  "scheduler_uri": "{vcapServices['predix-analytics-runtime'][0].credentials['scheduler_uri']}", 
+  "runtime_tenant": "{vcapServices['predix-analytics-runtime'][0].credentials['zone-http-header-value']}",
+  "catalog_uri":"{vcapServices['predix-analytics-catalog'][0].credentials['catalog_uri']}",
+  "catalog_tenant":"{vcapServices['predix-analytics-catalog'][0].credentials['zone-http-header-value']}",
+  "asset_uri": "{vcapServices['predix-asset'][0].credentials.uri}",
+  "asset_instance_id": "{vcapServices['predix-asset'][0].credentials.instanceId}"
+}
+
